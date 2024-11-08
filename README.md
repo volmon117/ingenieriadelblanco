@@ -1,2 +1,0 @@
-# ingenieriadelblanco
-Ingeniería Del Blanco
