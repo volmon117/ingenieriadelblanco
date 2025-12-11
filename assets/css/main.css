@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.85), rgba(46, 49, 65, 0.85)), url("../../images/bg.jpg");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -161,6 +161,15 @@ input, select, textarea {
 			}
 
 		}
+
+/* Clickable sections that use JS redirection */
+section[role="link"]{
+	cursor: pointer;
+}
+section[role="link"]:focus{
+	outline: 3px solid rgba(255,255,255,0.08);
+	outline-offset: 4px;
+}
 
 		@media screen and (max-width: 480px) {
 
