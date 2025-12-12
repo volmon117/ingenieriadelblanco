@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
 
-/*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -169,6 +163,119 @@ section[role="link"]{
 section[role="link"]:focus{
 	outline: 3px solid rgba(255,255,255,0.08);
 	outline-offset: 4px;
+}
+
+.page-aluminio .alum-gallery{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1.5rem;
+	margin-top: 1.25rem;
+}
+.page-aluminio .alum-gallery article{
+	background: #fff;
+	border-radius: 6px;
+	overflow: hidden;
+	box-shadow: 0 6px 18px rgba(15,20,30,0.06);
+	padding-bottom: 1rem;
+}
+.page-aluminio .alum-gallery .image img{
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+	display: block;
+}
+.page-aluminio .alum-gallery h4{
+	margin: 0.75rem 1rem 0.25rem 1rem;
+	font-size: 1.05rem;
+}
+.page-aluminio .alum-gallery p{
+	margin: 0 1rem 0.75rem 1rem;
+	color: #666;
+	font-size: 0.95rem;
+}
+
+/* Override global background image for Aluminio page */
+body.page-aluminio{
+	background-image: none !important;
+	background-color: #ffffff !important; /* Cream/off-white */
+	background-size: auto;
+	background-attachment: scroll;
+	background-position: center;
+}
+
+/* Prevent banner gradient that uses the common bg image */
+body.page-aluminio #banner{
+	background-image: none !important;
+	background-color: transparent !important;
+}
+
+/* Page-specific color overrides to use dark text on light background */
+body.page-aluminio,
+body.page-aluminio input,
+body.page-aluminio select,
+body.page-aluminio textarea {
+	color: #111 !important;
+}
+
+body.page-aluminio h1,
+body.page-aluminio h2,
+body.page-aluminio h3,
+body.page-aluminio h4,
+body.page-aluminio h5,
+body.page-aluminio h6 {
+	color: #111 !important;
+}
+
+/* Links and buttons: use a brand dark blue for visibility */
+body.page-aluminio a { color: #0f4c75 !important; border-bottom-color: rgba(15,76,117,0.15) !important; }
+body.page-aluminio a:hover { color: #08334a !important; }
+
+/* Keep header and dark feature cards with white text for contrast */
+body.page-aluminio #header, body.page-aluminio #header a, body.page-aluminio #header h1 { color: #fff !important; }
+body.page-aluminio .features article, body.page-aluminio .box { color: #fff !important; }
+
+/* Buttons on light background should keep white text with darker background */
+
+body.page-aluminio .button.primary { background-color: #0f4c75; color: #fff; box-shadow: none; }
+
+/* Page-specific section styles */
+body.page-index section {
+	color: #ffffff; /* white text for index */
+	background: transparent;
+}
+body.page-index section .box,
+body.page-index .features article {
+	background: rgba(46,49,65,0.12);
+	border-radius: 6px;
+}
+
+body.page-aluminio section {
+	background: #ffffff; /* white sections */
+	color: #111; /* black text */
+	border-radius: 6px;
+	padding: 1.5rem;
+	box-shadow: 0 10px 30px rgba(15,20,30,0.03);
+}
+
+body.page-wooddesign section {
+	background: linear-gradient(180deg, #5a3b25 0%, #452b18 100%);
+	color: #fff;
+	border-radius: 6px;
+}
+body.page-wooddesign .features article,
+body.page-wooddesign .box {
+	background: rgba(0,0,0,0.05);
+}
+/* Wood design links */
+body.page-wooddesign a { color: #f0dfc1 !important; border-bottom-color: rgba(240,223,193,0.2) !important; }
+body.page-wooddesign a:hover { color: #e1c79f !important; }
+
+/* Body background for Wood Design page */
+body.page-wooddesign{
+		background: #4A2F17;
+		background-image: 
+			repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px),
+			repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px);
 }
 
 		@media screen and (max-width: 480px) {
